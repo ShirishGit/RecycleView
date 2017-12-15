@@ -5,23 +5,33 @@ package in.recycleview.model;
  */
 
 public class Movie {
-    private String title, genre, year;
+    private String title, rating, year, share, comment, like;
+    private int image;
 
     public Movie() {
     }
 
-    public Movie(String title, String genre, String year) {
+    public Movie(String title, String rating, String year, int image) {
         this.title = title;
-        this.genre = genre;
+        this.rating = rating;
         this.year = year;
+        this.image = image;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String name) {
-        this.title = name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
     }
 
     public String getYear() {
@@ -32,11 +42,35 @@ public class Movie {
         this.year = year;
     }
 
-    public String getGenre() {
-        return genre;
+    public String getShare() {
+        return share;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setShare(String share) {
+        this.share = share;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getLike() {
+        return like;
+    }
+
+    public void setLike(String like) {
+        this.like = like;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
     }
 }

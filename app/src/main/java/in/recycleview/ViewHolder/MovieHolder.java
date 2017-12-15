@@ -2,6 +2,7 @@ package in.recycleview.ViewHolder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import in.recycleview.R;
@@ -12,15 +13,16 @@ import in.recycleview.R;
 
 public class MovieHolder extends RecyclerView.ViewHolder {
 
-    public TextView title, year, genre;
+    public ImageView image;
+    public TextView title, year, rating;
 
 
     public MovieHolder(View itemView) {
         super(itemView);
 
-
+        image = itemView.findViewById(R.id.image);
         title = itemView.findViewById(R.id.title);
         year = itemView.findViewById(R.id.year);
-        genre = itemView.findViewById(R.id.genre);
+        rating = itemView.findViewById(R.id.rating);
     }
 }
