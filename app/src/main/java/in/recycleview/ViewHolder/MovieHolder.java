@@ -18,6 +18,7 @@ public class MovieHolder extends RecyclerView.ViewHolder {
     public MovieHolder(View itemView) {
         super(itemView);
 
+
         title = itemView.findViewById(R.id.title);
         year = itemView.findViewById(R.id.year);
         genre = itemView.findViewById(R.id.genre);
